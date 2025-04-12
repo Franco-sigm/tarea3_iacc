@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Usuario</title>
+  <!--acá se implemento la libreria  de estilos bulma y para las animaciones, animate.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body {
+      background-image: url('https://img.freepik.com/vector-premium/fondo-ecologico-hojas-verdes_1302-6333.jpg?w=2000');
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      position: relative;
+      background-position: center;
+      margin-bottom: 0.5vh;
+  
+    }
+    .box {
+      width: 100%;
+      max-width: 500px;
+      padding: 2rem;
+      box-sizing: border-box;
+      background-color: #89cd49b3;
+      margin-top:5vh;
+      
+    }
+
+    
+</style>
+</head>
+<body>
+
+  <div class="box animate__animated animate__bounceInDown">
+    <h1 class="title has-text-centered">Regístrate con nosotros</h1>
+    <form id="formRegister">
+        
+      <div class="field">
+            <label class="label">Selecciona tu país</label>
+            <div class="control">
+              <div class="select is-fullwidth">
+                <select>
+                  <option>Chile</option>
+                  <option>Argentina</option>
+                  <option>Perú</option>
+                  <option>México</option>
+                  <option>Colombia</option>
+                  <option>Venezuela</option>
+                  <option>España</option>
+                  <option>Estados Unidos</option>
+                  <option>Otros</option>
+                </select>
+              </div>
+             </div>
+          
+             <div class="field">
+              <label class="label">Sexo</label>
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select name="sexo" required>
+                    <option value="">Seleccione...</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Fecha de Nacimiento</label>
+              <div class="control">
+                <input type="date" class="input" name="fecha_nacimiento" required>
+              </div>
+            </div>
+            
+            <div class="field">
+                <label class="label"> Ingresa tu RUT</label>
+                <div class="control">
+                  <input type="text" class="input" id="rut" name="rut" placeholder="Ej: 12.345.678-9" required>
+                </div>
+              </div>
+              
+      
+      <div class="field">
+        <label class="label">Nombre de Usuario</label>
+        <div class="control">
+          <input type="text" class="input" id="username" required placeholder="Ingrese su nombre de usuario"/>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Correo Electrónico</label>
+        <div class="control">
+          <input type="email" class="input" id="email" required placeholder="Ingrese su correo electrónico"/>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Contraseña</label>
+        <div class="control">
+          <input type="password" class="input" id="password" required placeholder="Ingrese su contraseña"/>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Confirmar Contraseña</label>
+        <div class="control">
+          <input type="password" class="input" id="confirmPassword" required placeholder="Confirme su contraseña"/>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <button type="submit" class="button is-primary is-fullwidth">Registrarse</button>
+        </div>
+      </div>
+    </form>
+        <p class="has-text-centered">
+      ¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a>
+    </p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <!--acá se implemento la libreria  de estilos bulma y para las animaciones, animate.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            
+            background-image: url('https://img.freepik.com/vector-premium/fondo-ecologico-hojas-verdes_1302-6333.jpg?w=2000');
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            position: center;
+            background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+            background-position: center; /* Centra la imagen de fondo */
+
+        }
+        .box {
+            box-sizing: border-box;
+            background-color: #89cd49b3; /* Fondo con opacidad */
+            border-radius: 10px;
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            padding: 2rem;
+            margin: 0 auto;
+            background-position: center;
+            background-size: cover;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <section class="section">
+        <div class="animate__animated animate__zoomInUp"> ">
+            <div class="box">
+                <h1 class="title has-text-centered">Iniciar Sesión</h1>
+                <form id="formLogin">
+                    <div class="field">
+                        <label class="label">Correo</label>
+                        <div class="control">
+                            <input type="email" id="emailLogin" class="input" required placeholder="Ingrese su correo">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Contraseña</label>
+                        <div class="control">
+                            <input type="password" id="passwordLogin" class="input" required placeholder="Ingrese su contraseña">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <button class="button is-primary is-fullwidth">Iniciar Sesión</button>
+                    </div>
+                </form>
+                <p id="mensajeLogin" class="has-text-centered"></p>
+                <p class="has-text-centered">
+                    <a href="register.html">¿No tienes cuenta? Regístrate aquí</a>
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
